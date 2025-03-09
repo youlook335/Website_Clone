@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/window\ wall.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+.computer{
+    padding: 20px;
+    /* border: 2px solid black; */
+    width: 8vw;
+    text-align: center;
+}
+.computer img{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+.computer:hover{
+    border: 2px dotted black;
+}
+.file{
+    width: 8vw;
+    text-align: center;
+    padding: 20px;
+    /* border: 2px solid black; */
+}
+.file img{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+.file:hover{
+    border: 2px dotted black;
+}
+.recycle{
+    margin-left: 0px;
+    width: 8vw;
+    text-align: center;
+    padding: 20px;
+    /* border: 2px solid black; */
+}
+.recycle img{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+.recycle:hover{
+    border: 2px dotted black;
+}
+
+
+/* ========================================================taskbar code============================================== */
+.right{
+    /* border: 5px solid rgb(255, 255, 255); */
+    display: flex;
+    gap: 0px;
+}
+.taskbar{
+    background-color:#182230;
+    height: 55px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.win-icon{
+    /* border: 2px solid white; */
+    width: 50px;
+    height: 55px;
+}
+.win-icon i{
+    font-size: 20px;
+    padding: 18px;
+    color: white;
+    cursor: pointer;
+}
+.win-icon i:hover{
+    color: rgb(143, 141, 236);
+}
+.search-icon i{
+    margin-left: 5px;
+    padding: 15px;
+    /* border: 2px solid wheat; */
+    color: white;
+    font-size: 25px;
+    height: 55px;
+    width: 55px;
+}
+.chrome-icon i{
+    /* margin-left: 10px; */
+    color: white;
+    /* border: 2px solid white; */
+    height: 55px;
+    width: 55px;
+    font-size: 25px;
+    padding: 13px;
+}
+.chrome-icon i:hover{
+    background-color: #322f2e;
+}
+.mail-icon i{
+    /* margin-left: 10px; */
+    color: white;
+    /* border: 2px solid white; */
+    height: 55px;
+    width: 55px;
+    font-size: 25px;
+    padding: 13px;
+}
+.mail-icon i:hover{
+    background-color: #322f2e;
+}
+.edge-icon i{
+    color: white;
+    height: 55px;
+    width: 55px;
+    font-size: 25px;
+    padding: 13px;
+    /* margin-left: 10px; */
+}
+.edge-icon i:hover{
+    background-color: #322f2e;
+}
+
+
+/* ======================================LEFT SIGHT======================================== */
+.left{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+
+.window-model{
+    position: absolute;
+    /* top: 0; */
+    bottom: -571px;
+    transition: all 0.3s ease-in;
+}
+.window-model img{
+    height: 80vh;
+    width: 40vw;
+}

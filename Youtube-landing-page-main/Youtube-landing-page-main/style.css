@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    width: 100%;
+    height: 100%;
+} */
+.navbar-logo img{
+    height: 80px;
+    width: 135px;
+    padding: 5px 5px;
+    /* margin-left: 60px; */
+}
+.navbar{
+    background-color: #ffffff;
+    position: fixed;
+}
+.nav-link input{
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 35vw;
+    border-radius: 25px;
+    outline: none;
+    /* margin: 20px; */
+}
+.nav-link i{
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    padding: 14px;
+    margin-left: -62px;
+    font-weight: 600;
+    border-radius: 0px 25px 25px 0px;
+}
+.nav-link i:hover{
+    background-color: #f8f8f8;
+}
+#micro{
+    border: none;
+    margin-left: -10px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+.right{
+    border: 2px solid #ccc;
+    padding: 8px;
+    border-radius: 25px;
+    /* font-size: 13px; */
+    color: blue;
+    width: 8vw;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.right:hover{
+    background-color: #f8f8f8;
+    /* cursor: pointer; */
+}
+.right span{
+    margin-left: 5px;
+}
+.sidebar{
+    /* background-color: blueviolet; */
+    /* min-height: 10%; */
+    position: fixed;
+    /* margin-top: -90px */
+
+
+}
+.home{
+    /* background-color: aqua; */
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.home i{
+    font-size: 20px;
+}
+.home span{
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.home:hover{
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    width: 15vw;
+}
+.home a{
+    color: black;
+}
+
+.main-content{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+.content-1{
+    /* background-color: #ccc; */
+    margin: 5px; 
+    padding: 20px; 
+     width: 23vw; 
+     height: 43vh;
+     overflow: visible;
+    /* text-align: center; */
+}
+.img img{
+    height: 25vh;
+    width: 20vw;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.carosel{
+    background-color: #ffffff;
+    /* border: 2px solid black; */
+    width: 70vw;
+    margin-left: 27%;
+}
+.carosel .btns{
+    background-color: #f8f8f8;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    padding: 8px 60px;
+    /* border: 2px solid black; */
+    margin: 5px;
+    border-radius: 10px;
+}
+.btns:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.4s ease-in
+}
+a{
+    color: black;
+    text-decoration: none;
+}

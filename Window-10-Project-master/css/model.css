@@ -1,0 +1,134 @@
+/* General styling */
+.thisPc-model {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 9%;
+    left: 10%;
+}
+
+/* First part: Title bar */
+.first-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d7;
+    color: white;
+    padding: 10px;
+}
+
+.first-part .right {
+    display: flex;
+    align-items: center;
+}
+
+.first-part .right img {
+    width: 20px;
+    margin-right: 10px;
+}
+.first-part .left{
+    gap: 18px;
+}
+
+.first-part .left button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* gap: 17px; */
+}
+
+.first-part .left button:hover {
+    background-color: #005a9e;
+}
+
+/* Second part: Menu bar */
+.second-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+.second-part .second-left span,
+.second-part .second-right span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Third part: Main section (navigation and content) */
+.third-part {
+    display: flex;
+    height: 400px;
+}
+
+/* Side navigation */
+.nav-left {
+    width: 20%;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+.nav-left ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-left ul li {
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-left ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Content area (folders and drives) */
+.content-right {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: flex-start;
+    gap: 30px;
+    background-color: white;
+}
+
+.folder {
+    text-align: center;
+    width: 100px;
+}
+
+.folder img {
+    width: 60px;
+    height: 60px;
+}
+
+.folder p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Adding border to icons for control */
+.border {
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.disk{
+    display: flex;
+    position: absolute;
+    top: 51%;
+    left: 23%;
+    /* padding: 10px; */
+    gap: 20px;
+    cursor: pointer;
+}

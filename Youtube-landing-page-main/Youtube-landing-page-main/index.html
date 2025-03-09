@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Youtube</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-logo" href="#"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><input type="text" placeholder="Search" id="search" onkeyup="searchVideos()"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-microphone"
+                  id="micro"></i></a>
+            </li>
+          </ul>
+          <div class="right">
+            <i class="fa-regular fa-user"></i>
+            <span>Sign in</span>
+          </div>
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="carosel">
+      <button class="btns">All</button>
+      <button class="btns">Development</button>
+      <button class="btns">Music</button>
+      <button class="btns">Live</button>
+      <button class="btns">Python</button>
+      <!-- <button class="btns">News</button> -->
+    </div>
+  </header>
+  <main>
+    <div class="sidebar container-fluid " position-fixed"">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="home">
+           <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+            <span>Home</span>
+          </div>
+
+          <div class="home">
+            <i class="fas fa-bell"></i>
+            <span>Subscriptions</span>
+          </div>
+
+          <div class="home">
+            <i class="fas fa-play-circle"></i>
+            <span>Shorts</span>
+          </div>
+
+          <hr>
+
+          <div class="home">
+            <i class="fa-regular fa-user"></i>
+            <span>You</span>
+          </div>
+
+          <div class="home">
+            <i class="fas fa-history"></i>
+            <span>History</span>
+          </div>
+
+          <hr>
+
+          <div class="home">
+            <i class="fas fa-chart-line"></i>
+            <span>Trending</span>
+          </div>
+
+          <div class="home">
+            <i class="fas fa-music"></i>
+            <span>Music</span>
+          </div>
+
+          <div class="home">
+            <i class="fas fa-gamepad"></i>
+            <span>Gaming</span>
+          </div>
+
+          <div class="home">
+            <i class="fas fa-newspaper"></i>
+            <span>News</span>
+          </div>
+        </div>
+
+        <div class="col-md-9 main-content">
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+          <div class="content-1">
+            <div class="img">
+              <img onclick="playfunc()" src="images/main pic.webp" alt="Video thumbnail" class="thumbnail">
+            <!-- Video hidden by default -->
+            <video controls width="100%" class="video" hidden>
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <div class="content">
+              <h3>Top 10 Travel Destinations 2024</h3>
+              <p>Views: 1.5M views <span>2 days ago</span></p>
+            </div>
+          </div>
+
+          
+
+          
+        
+          
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <script src="script.js"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

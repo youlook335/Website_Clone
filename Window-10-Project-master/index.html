@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window 10</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/model.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="desktop">
+            <div id="this-Pc" class="computer">
+                <img  src="images/computer.png" alt="">
+                <p>My Computer</p>
+            </div>
+        
+        <div id="desktop-file" class="file">
+            <img src="images/folder.png" alt="">
+            <p>File</p>
+        </div>
+        
+        <div class="recycle">
+            <img src="images/compost.png" alt="">
+            <p>Recycle bin</p>
+        </div>
+    </div>
+
+
+    <div class="taskbar">
+        <div class="right">
+            <div id="windowBtn" class="win-icon">
+                <i class="fa-brands fa-windows"></i>
+            </div>
+            <div class="search-icon">
+                <!-- <input type="text" placeholder="Type your search"> -->
+                <i class="fa-solid fa-magnifying-glass">
+                </i>
+            </div>
+            <div class="chrome-icon">
+                <i class="fa-brands fa-chrome"></i>
+            </div>
+            <div class="mail-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="edge-icon">
+                <i class="fa-brands fa-edge"></i>
+            </div>
+        </div>
+
+        <div class="left">
+            <img src="images/Screenshot (5).png" alt="">
+        </div>
+        
+    </div>
+
+    <div id="window-view" class="window-model" >
+        <img src="images/Screenshot (15).png" alt="">
+    </div>
+
+    <div id="model-view" class="thisPc-model" hidden>
+        <!-- First part: Title bar with This PC and control buttons -->
+        <div class="first-part">
+            <div class="right">
+                <img src="images/computer.png" alt="Computer Icon">
+                <span>This PC</span>
+            </div>
+            <div class="left">
+                <button>-</button>
+                <button>[]</button>
+                <button id="close-btn">X</button>
+            </div>
+        </div>
+        <hr>
+    
+        <!-- Second part: Menu bar with File, Computer, and View options -->
+        <div class="second-part">
+            <div class="second-left">
+                <span>File</span>
+                <span>Computer</span>
+                <span>View</span>
+            </div>
+            <div class="second-right">
+                <span>&lt;</span>
+                <span class="border">?</span>
+            </div>
+        </div>
+        <hr>
+    
+        <!-- Third part: Side navigation and folder display -->
+        <div class="third-part">
+            <!-- Side navigation (folders) -->
+            <div class="nav-left">
+                <ul>
+                    <li>Desktop</li>
+                    <li>Documents</li>
+                    <li>Downloads</li>
+                    <li>Pictures</li>
+                    <li>Music</li>
+                    <li>Videos</li>
+                    <li>This PC</li>
+                </ul>
+            </div>
+    
+            <!-- Main content area (folders and drives) -->
+            <div class="content-right">
+                <div class="folder">
+                    <img src="images/folder.png" alt="Folder Icon">
+                    <p>Documents</p>
+                </div>
+                <div class="folder">
+                    <img src="images/folder.png" alt="Folder Icon">
+                    <p>Pictures</p>
+                </div>
+                <div class="folder">
+                    <img src="images/folder.png" alt="Folder Icon">
+                    <p>Music</p>
+                </div>
+                <div class="folder">
+                    <img src="images/folder.png" alt="Folder Icon">
+                    <p>Videos</p>
+                </div>
+            </div>
+
+
+            <div class="disk">
+                <div class="folder">
+                    <img src="images/disk.webp" alt="Drive Icon">
+                    <p>Local Disk (C:)</p>
+                </div>
+                <div class="folder">
+                    <img src="images/disk.webp" alt="Drive Icon">
+                    <p>Local Disk (D:)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
